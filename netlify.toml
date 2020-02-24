@@ -5,12 +5,12 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
   status = 200
+  force = true
   conditions = {Role = ["admin"]}
 
 [[redirects]]
   from = "/*"
   to = "/login.html"
-  status = 200
+  status = 401
   force = true
