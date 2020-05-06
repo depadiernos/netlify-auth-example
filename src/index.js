@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import axios from 'axios'
 
 import logo from './logo.svg';
 import './index.css';
 
 function App() {
+
+  const onClick = async (url) => {
+    const res = await axios.get(url, {headers: {"Authorization":"My Pretend Token Here"}})
+    console.log(res.body)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -13,6 +20,7 @@ function App() {
           Welcome
         </p>
       </header>
+      <button onClick={() => onClick("https://blissful-roentgen-8da48d.netlify.app/search2")}>Hit Me!</button>
     </div>
   );
 }
