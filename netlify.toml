@@ -11,12 +11,11 @@
 #   signed = "API_SIGNATURE_TOKEN"
 #   headers = {Authorization = "Netlify"}    
   
-# [[redirects]]
-#   from = "/search2"
-#   to = "https://enq07qn14tpl.x.pipedream.net"
-#   status = 200
-#   force = true
-#   headers = {Authorization = "Netlify"} 
+[[redirects]]
+  from = "/search2"
+  to = "https://enq07qn14tpl.x.pipedream.net"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/search"
