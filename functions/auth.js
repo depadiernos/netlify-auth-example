@@ -17,6 +17,7 @@ const userData = {
 app.get('/.netlify/functions/auth/anon', (_, res) => {
   return res
     .cookie('nf_jwt', sign(userData, process.env.JWT_SECRET))
+    .redirect('/');
 });
 
 export const handler = serverless(app);
