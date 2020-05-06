@@ -2,6 +2,13 @@
   command = "npm run build"
   publish = "build"
   functions = "api"
+  
+  [[redirects]]
+  from = "/search"
+  to = "https://enq07qn14tpl.x.pipedream.net"
+  status = 200
+  force = true
+  signed = "API_SIGNATURE_TOKEN"
 
 [[redirects]]
   from = "/*"
