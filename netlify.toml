@@ -19,13 +19,13 @@
 #   headers = {Authorization = "Netlify"} 
 
 [[redirects]]
-  from = "/*"
+  from = "/search"
   status = 200
   force = true
   conditions = {Role = ["*"]}
 
 [[redirects]]
-  from = "/*"
+  from = "/search/*"
   to = "/login.html"
   status = 401
   force = true
