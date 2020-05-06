@@ -7,7 +7,7 @@ import './index.css';
 
 function App() {
 
-  const onClick = async (url) => {
+  const clickHandler = async (url) => {
     const res = await axios.get(url, {headers: {"Authorization":"My Pretend Token Here"}})
     console.log(res.body)
   }
@@ -20,7 +20,7 @@ function App() {
           Welcome
         </p>
       </header>
-      <button onClick={() => onClick("https://blissful-roentgen-8da48d.netlify.app/search2")}>Hit Me!</button>
+      <button onClick={() => clickHandler("https://blissful-roentgen-8da48d.netlify.app/search2")}>Hit Me!</button>
     </div>
   );
 }
