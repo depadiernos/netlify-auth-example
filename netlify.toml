@@ -22,7 +22,7 @@
   from = "/*"
   status = 200
   force = true
-  conditions = {Role = ["admin"]}
+  conditions = {Role = ["*"]}
 
 [[redirects]]
   from = "/*"
