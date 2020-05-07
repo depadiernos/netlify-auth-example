@@ -7,7 +7,7 @@ import './index.css'
 
 function App() {
   const clickHandler = async url => {
-    const res = await axios.post(url, { message: 'hi world' }, { headers: { Authorization: 'My Pretend Token Here' } })
+    const res = await axios.put(url, { message: 'hi world' }, { headers: { Authorization: 'My Pretend Token Here' } })
     console.log(res.body)
   }
 
