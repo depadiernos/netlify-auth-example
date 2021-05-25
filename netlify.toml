@@ -3,6 +3,11 @@
   publish = "build"
   functions = "api"
   
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Basic-Auth = "user:password"
+  
 # [[redirects]]
 #   from = "/search"
 #   to = "https://enq07qn14tpl.x.pipedream.net"
